@@ -25,7 +25,7 @@ quote = db.execute("""
 select id, speaker, message from quotes
 where enabled = true
 and length(speaker || message) < 496
-and length(message) > 10
+and length(message) > 20
 order by random()
 limit 1
 """).fetchone()
