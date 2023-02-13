@@ -35,7 +35,7 @@ db_conn.commit()
 if not quote[1]:
 	postMsg = quote[2]
 else:
-	postMsg = "{0}\n{1}".format(quote[1], quote[2])
+	postMsg = "{0}\n{1}".format(quote[1].upper(), quote[2])
 
 print('Posting quote:', quote[0])
 
